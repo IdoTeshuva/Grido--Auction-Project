@@ -1,24 +1,18 @@
 import './App.css';
-// import {Button} from "@mui/material"
 import Register from './components/Register';
 import Login from './components/Login';
 import Items from './components/Items';
-import axios from "axios"
 import {Link, Routes, Route} from "react-router-dom"
 import Home from './components/Home';
 import Footer from './components/Footer';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { useEffect, useState } from 'react';
-// import { trusted } from 'mongoose';
 
-const api = axios.create({
-  baseURL:"http://www.localhost:3001"
-})
+
 
 function App() {
   const [username, setUsername] = useState("")
   const [isAdmin, setIsAdmin] = useState(false)
-  const [error, setError] = useState(false)
 
 useEffect(() => {
   const userData = 
@@ -44,18 +38,18 @@ const check =() => {
     localStorage.removeItem('User')
   }
 
-  const checkAdmin = () => {
-    api.get('/login')
-    .then((res) => {
-      const data = res.data
-      setError(data.error)
-      if (!error){
-        setIsAdmin(true)
-      }
+  // const checkAdmin = () => {
+  //   api.get('/login')
+  //   .then((res) => {
+  //     const data = res.data
+  //     setError(data.error)
+  //     if (!error){
+  //       setIsAdmin(true)
+  //     }
 
-  })
-  }
-console.log(isAdmin);
+  // })
+  // }
+
 
   return (
     
@@ -74,7 +68,7 @@ console.log(isAdmin);
 
        {username &&(
 
-         <li className='logout'> <a onClick={logout}>Log Out</a></li>
+         <li className='logout'> <div onClick={logout}>Log Out</div></li>
        )}
         </ul>
       </div>
@@ -86,7 +80,7 @@ console.log(isAdmin);
      <Footer/>
      </div>} />
      <Route path ='/register'element={<Register/>} />
-     <Route path ='/login'element={<Login username= {username} setUsername = {setUsername} isAdmin = {isAdmin} setIsAdmin = {setIsAdmin} checkAdmin={checkAdmin} check={check}/>} />
+     <Route path ='/login'element={<Login username= {username} setUsername = {setUsername} isAdmin = {isAdmin} setIsAdmin = {setIsAdmin} check={check}/>} />
       </Routes>
     </div>
   );
