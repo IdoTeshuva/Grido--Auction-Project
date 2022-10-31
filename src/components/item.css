@@ -1,0 +1,92 @@
+.items{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.our-prod{
+    font-size: 60px;
+    color: grey;
+}
+
+
+.item{
+    min-width: 15vw;
+    min-height: 15vh;
+    max-width: 20vw;
+    max-height: 35vw;
+    height: auto;
+    width: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px lightgray;
+    margin: 30px;
+}
+
+.sold{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(148, 21, 21);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1vh;
+}
+
+.filter-bar{ 
+    margin-bottom: 5vh;
+    width: 12vw;
+
+}
+
+.admin-info{
+    color: grey;
+}
+
+.add-icon{
+    height: 5vh;
+    border-radius: 10vh !important;
+}
+.item-img{
+    height: 12vh;
+}
+.select-bar{
+    width:12vw;
+}
+.please-login{
+    color: gray;
+    font-weight: 100;
+    background-color: rgb(224, 224, 224);
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-title{
+    margin: 0;
+}
+.item-desc{
+    margin-top: 0;
+    margin-bottom: 1vh;
+}
+.item-price{
+    margin: 0;
+}
+.item-category{
+    margin-top: 0;
+
+}
+
+.skel{
+    margin: 5vh;
+}
+
+.load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}

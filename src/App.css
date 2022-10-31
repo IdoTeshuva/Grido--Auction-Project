@@ -1,3 +1,67 @@
+.navbar{
+color: black;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+position: fixed;
+z-index: 10;
+width: 100vw;
+backdrop-filter: blur(10px);
+height: 5vh;
+background-color: rgba(202, 202, 202, 0.19);
+}
+.ul-navbar{
+  list-style:none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0;
+  height: 5vh;
+  flex-direction: row;
+}
+.ul-navbar a{
+  margin: 10px;
+  text-decoration: none !important;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  transition: .2s;
+}
+.h2grido{
+  margin: 10px;
+  text-decoration: none !important;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+.ul-navbar a:hover{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  position: relative;
+}
+
+/* .ul-navbar a:active{
+  background-color: rgb(234, 234, 234);
+  padding-bottom:10vh ;
+} */
+
+.hello{
+  right: 10vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logout{
+  right: 3vw;
+  position: absolute;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+}
 .App {
   text-align: center;
 }
@@ -36,3 +100,5 @@
     transform: rotate(360deg);
   }
 }
+
+

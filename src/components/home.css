@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(234, 234, 234);
+}
+
+.grido{
+    font-size: 460px;
+    color: rgb(244, 244, 244);
+    position: relative;
+    z-index: 0;
+}
+.welcome{
+    margin: 0;
+    top: 10vh;
+    position: relative;
+    font-size: 100px;
+    color: grey;
+    letter-spacing: 20px;
+}
+
+.down{
+    font-size: 60px !important;
+    color: grey;
+    top: -5vh;
+    position: relative;
+}

@@ -1,0 +1,10 @@
+.login-div input{
+ width: 20vw ;
+}
+.login-div{
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,10 @@
+.footer-div{
+    min-height: 10vh;
+    height: auto;
+    background-color:  rgb(30, 92, 199);
+    color: rgb(224, 224, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
