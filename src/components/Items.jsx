@@ -1,5 +1,4 @@
 import {
-  Fab,
   TextField,
   Button,
   Select,
@@ -32,7 +31,6 @@ const Items = ({ username, setUsername, isAdmin, setIsAdmin }) => {
   const [openForm, setOpenForm] = useState(false);
   const [selectCatefory, setSelectCategory] = useState();
   const [endSale, setEndSale] = useState(false);
-  const [moreInfo, setMoreInfo] = useState(false);
 
   const GetItems = () => {
         api.get("/items").then((res) => {
@@ -195,7 +193,7 @@ const Items = ({ username, setUsername, isAdmin, setIsAdmin }) => {
                     <img
                       className="item-img"
                       src={data.image}
-                      alt="https://fomantic-ui.com/images/wireframe/white-image.png"
+                      alt=""
                     />
                     <h1 className="item-title">{data.title}</h1>
                     <h5 className="item-desc">{data.description}</h5>
@@ -238,6 +236,7 @@ const Items = ({ username, setUsername, isAdmin, setIsAdmin }) => {
                       setCounter={setCounter}
                       GetItems={GetItems}
                       endSale={endSale}
+                      setEndSale={setEndSale}
                     />
                   </div>
                 );
@@ -247,7 +246,7 @@ const Items = ({ username, setUsername, isAdmin, setIsAdmin }) => {
                   <img
                     className="item-img"
                     src={data.image}
-                    alt="https://fomantic-ui.com/images/wireframe/white-image.png"
+                    alt=""
                   />
                   <h1 className="item-title">{data.title}</h1>
                   <h5 className="item-desc">{data.description}</h5>
