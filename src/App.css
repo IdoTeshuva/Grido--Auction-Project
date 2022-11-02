@@ -6,7 +6,8 @@ align-items: center;
 padding: 10px;
 position: fixed;
 z-index: 10;
-width: 100vw;
+min-width: 100vw;
+width: auto;
 backdrop-filter: blur(10px);
 height: 5vh;
 background-color: rgba(202, 202, 202, 0.19);
@@ -66,16 +67,7 @@ background-color: rgba(202, 202, 202, 0.19);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -100,5 +92,17 @@ background-color: rgba(202, 202, 202, 0.19);
     transform: rotate(360deg);
   }
 }
+body{
+  overflow-x: hidden;
+}
 
-
+@media only screen and (max-width: 768px){
+  .navbar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  body{
+    overflow-x: hidden;
+  }
+}

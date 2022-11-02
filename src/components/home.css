@@ -3,7 +3,7 @@ body{
 }
 
 .grido{
-    font-size: 460px;
+    font-size: 29rem;
     color: rgb(244, 244, 244);
     position: relative;
     z-index: 0;
@@ -22,4 +22,19 @@ body{
     color: grey;
     top: -5vh;
     position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+    .grido{
+        font-size: 6em;
+        margin-top: 10vh;
+
+    }
+
+    .welcome{
+        font-size: 3em;
+    }
+    .down{
+        margin-top: 3vh;
+    }
 }
