@@ -4,7 +4,7 @@ import {Button, TextField, Alert} from "@mui/material"
 import "./register.css"
 import { useNavigate } from "react-router-dom";
 const api = axios.create({
-    baseURL:"http://www.localhost:3001"
+    baseURL:"http://www.localhost:3000"
 })
 
 

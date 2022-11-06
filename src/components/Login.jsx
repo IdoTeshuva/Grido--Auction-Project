@@ -4,7 +4,7 @@ import axios from "axios"
 import "./login.css"
 import { useNavigate } from "react-router-dom";
 const api = axios.create({
-    baseURL:"http://www.localhost:3001"
+    baseURL:"http://www.localhost:3000"
 })
 const Login = ({username, setUsername, isAdmin, setIsAdmin, checkAdmin, check}) => {
     const [user, setUser] = useState(null)

@@ -2,7 +2,7 @@ import { useState } from "react"
 import {Button, TextField, Alert} from "@mui/material"
 import axios from "axios"
 const api = axios.create({
-    baseURL: 'http://www.localhost:3001'
+    baseURL: 'http://www.localhost:3000'
 })
 
 const Bid = ({id, item, setItem, items, counter, setCounter, GetItems, username, setUsername, endSale})=> {
