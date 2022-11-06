@@ -21,7 +21,7 @@ import "./item.css";
 const { useEffect } = require("react");
 const { useState } = require("react");
 const api = axios.create({
-  baseURL: "http://www.localhost:3000",
+  baseURL: "https://gridoserver.cyclic.app"
 });
 
 const Items = ({ username, setUsername, isAdmin, setIsAdmin }) => {
