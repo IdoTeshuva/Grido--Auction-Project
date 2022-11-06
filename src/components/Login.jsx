@@ -4,7 +4,7 @@ import axios from "axios"
 import "./login.css"
 import { useNavigate } from "react-router-dom";
 const api = axios.create({
-    baseURL:"https://gridoserver.cyclic.app "
+    baseURL: "https://gridoserver.cyclic.app"
 })
 const Login = ({username, setUsername, isAdmin, setIsAdmin, checkAdmin, check}) => {
     const [user, setUser] = useState(null)
